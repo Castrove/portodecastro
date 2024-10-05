@@ -1,3 +1,7 @@
+const roleTxt = document.getElementById('roles');
+const roles = ["Computer Engineer", "Developer", "Illustrator"]
+let i = 0;
+
 window.onload = () => {
     const selection = document.querySelectorAll(".selection a");
 
@@ -10,11 +14,14 @@ window.onload = () => {
             document.querySelector('.current').classList.remove('current');
             document.querySelector(page_btn).classList.add('is-active');
             document.querySelector(`a[href='${page_btn}'`).classList.add('current');
-
-            console.log(document.querySelector('.current'));
-            console.log(document.querySelector(`a[href='${page_btn}'`));
-            console.log(document.querySelector('.menu'));
-
         })
     }
 }
+
+let roleFlipper = setInterval(() => {
+    if (document.getElementById("header").classList.contains("is-active")) {
+        i = i % roles.length;
+        roleTxt.innerHTML = roles[i];
+        i++;
+    } else { clearInterval(roleFlipper); }
+}, 5000);
