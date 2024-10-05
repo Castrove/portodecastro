@@ -7,11 +7,13 @@ window.onload = () => {
         
         page_select.addEventListener('click', () => {
             document.querySelector('.is-active').classList.remove('is-active');
+            document.querySelector('.current').classList.remove('current');
             document.querySelector(page_btn).classList.add('is-active');
+            document.querySelector(`a[href='${page_btn}'`).classList.add('current');
 
-            console.log(page_btn);
-            console.log(document.querySelector(page_btn).getAttribute("class"));
-            console.log(document.querySelector("#header").getAttribute("class"));
+            console.log(document.querySelector('.current'));
+            console.log(document.querySelector(`a[href='${page_btn}'`));
+            console.log(document.querySelector('.menu'));
 
         })
     }
