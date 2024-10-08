@@ -1,0 +1,33 @@
+section div.title {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+section div.container {
+    padding: 30px 200px 10px;
+}
+
+section div.timeline {
+    display: flex;
+    justify-content: center;
+    .cell {
+        padding: 0px 10px;
+    }
+}
+
+section div.entity {
+    padding-bottom: 15px;
+    padding-left: 30px;
+    p { padding-top: 10px }
+    ul { padding-left: 50px}
+}
+
+section div.contact-info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    .info {
+        margin: 10px;
+        padding: 5px;
+        display: inline-flex;
+    }
+}

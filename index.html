@@ -9,6 +9,7 @@
 
   <!-- CSS -->
   <link href="css/style.css" rel="stylesheet">
+  <link href="css/body.css" rel="stylesheet">
   <link href="assets/boxicons/css/boxicons.min.css" rel="stylesheet">
 
 </head>
@@ -50,7 +51,7 @@
   <section id="about" class="page">
 
     <!-- ======= About Me ======= -->
-    <div class="container">
+    <div class="container me">
 
       <div class="title">
         <h2>About</h2>
@@ -65,44 +66,9 @@
           </p>
         </div>
       </div>
-
     </div>
     <!-- End About Me -->
-
-    <!-- ======= Portfolio Preview ======= -->
-    <div class="container">
-
-      <div class="title">
-        <h2>Portfolio</h2>
-      </div>
-
-      <div class="row">
-        <div class="cell"> <!--extra div to equalize cells; will be made to boxes-->
-          <div class="icon-box">
-            <h3>Software Development</h3>
-          </div>
-        </div>
-        <div class="cell">
-          <div class="icon-box">
-            <h3>Electronics</h3>
-          </div>
-        </div>
-        <div class="cell">
-          <div class="icon-box">
-            <h3>Arts & Illustration</h3>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- End Preview -->
-  </section>
-  <!-- End About Section -->
-
-
-
-  <!-- ======= Education Section ======= -->
-  <section id="education" class="page">
-    <div class="container">
+    <div class="container education">
       <div class="title">
         <h2>Education</h2>
       </div>
@@ -117,10 +83,16 @@
         </div>
       </div>
     </div>
+  </section>
+  <!-- End About Section -->
 
 
+
+  <!-- ======= Education Section ======= -->
+  <section id="education" class="page">
+    
     <div class="certificate">
-    <div class="container">
+    <div class="container certificate">
       <div class="title">
         <h2>Certification</h2>
       </div>
@@ -133,7 +105,7 @@
               <h4>Fundamentals of C#</h4>
               <h5>FreeCodeCamp - <i>August 2024</i></h5>
               <div class="certificate-links">
-                <a href="www.google.com" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                <a href="www.google.com" target="_blank" title="ToolTip"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -146,7 +118,7 @@
               <h4>Robotics and Automation Entry Level</h4>
               <h5>Erovoutika Robotics and Automation Solutions - <i>May 2024</i></h5>
               <div class="certificate-links">
-                <a href="www.google.com" target="_blank" title="Certificate"><i class="bx bx-link"></i></a>
+                <a href="www.google.com" target="_blank" title="ToolTip"><i class="bx bx-link"></i></a>
               </div>
             </div>
           </div>
@@ -223,6 +195,33 @@
 
       </div>
     </div>
+
+        <!-- ======= Portfolio Preview ======= -->
+    <div class="container">
+
+      <div class="title">
+        <h2>Portfolio</h2>
+      </div>
+
+      <div class="row">
+        <div class="cell"> <!--extra div to equalize cells; will be made to boxes-->
+          <div class="icon-box">
+            <h3>Software Development</h3>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="icon-box">
+            <h3>Electronics</h3>
+          </div>
+        </div>
+        <div class="cell">
+          <div class="icon-box">
+            <h3>Arts & Illustration</h3>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End Preview -->
   </section>
   <!-- End Project Section -->
 
@@ -235,28 +234,30 @@
         <h2>Contact</h2>
       </div>
 
-      <div class="row">
-        <div class="cell">
-          <div class="info-box">
-            <i class="bx bx-share-alt"></i>
+      <div class="contact-info">
+        <div class="info">
+          <i class="bx bx-share-alt"></i>
+          <div class="content">
             <h3>Social Profiles</h3>
             <div class="links">
               <a href="https://www.linkedin.com/in/ludcastrov" target="_blank" class="linkedin"><i class="bx bxl-linkedin"></i></a>
               <a href="https://www.github.com/castrove" target="_blank" class="github"><i class="bx bxl-github"></i></a>
               <a href="https://mail.google.com/mail/u/0/?fs=1&to=ludinecastro@gmail.com&tf=cm" target="_blank" class="google"><i class="bx bxl-google"></i></a>
-
             </div>
           </div>
         </div>
 
-        <div class="cell">
-          <div class="info-box">
-            <i class="bx bx-envelope"></i>
+        <div class="info">
+          <i class="bx bx-envelope"></i>
+          <div class="content">
             <h3>Email</h3>
             <p>ludinecastro@gmail.com</p>
           </div>
-          <div class="info-box">
-            <i class="bx bx-phone-call"></i>
+        </div>
+
+        <div class="info">
+          <i class="bx bx-phone-call"></i>
+          <div class="content">
             <h3>Contact</h3>
             <p>+</p>
           </div>
